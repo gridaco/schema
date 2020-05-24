@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:schema_studio/screens/studio.dart';
 import 'package:schema_studio/utils/menubar.dart';
+import 'package:schema_studio/utils/window_size.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   initMenubars();
+  initWindowSizePreferences();
   runApp(MyApp());
 }
 

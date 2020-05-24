@@ -36,6 +36,12 @@ dependencies:
       path: plugins/menubar
       ref: 2384bd8
 
+  window_size:
+    git:
+      url: git://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+      ref: 2384bd8
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
