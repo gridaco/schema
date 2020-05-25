@@ -1,6 +1,7 @@
 # schema_studio
 
 Bridged schema studio built on flutter
+
 ![preview](/docs/macos-preview.png =250x)
 
 ## Getting Started
