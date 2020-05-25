@@ -1,7 +1,10 @@
 import 'dart:ui';
 
+import 'package:schema_studio/utils/platform_utils.dart';
 import 'package:window_size/window_size.dart';
 
 initWindowSizePreferences() {
-  setWindowMinSize(Size(1000, 800));
+  if (isDesktop) {
+    setWindowMinSize(Size(1000, 800));
+  }
 }

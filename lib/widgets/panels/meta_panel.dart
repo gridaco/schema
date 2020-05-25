@@ -19,16 +19,13 @@ class _MetaPanelState extends State<MetaPanel> {
   Widget _buildBody() {
     return SingleChildScrollView(
       child: Container(
-          height: double.maxFinite,
-          padding: EdgeInsets.all(8),
-          child: tab1Content()),
-    );
-  }
-
-  Widget tab1Content() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [Text("meta fields panel")],
+        height: double.maxFinite,
+        padding: EdgeInsets.all(8),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [Text("meta fields panel")],
+        ),
+      ),
     );
   }
 }

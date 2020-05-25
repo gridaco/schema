@@ -1,9 +1,9 @@
-import 'dart:io';
 import 'package:menubar/menubar.dart';
 import 'package:schema_studio/utils/importer/import_json.dart';
+import 'package:schema_studio/utils/platform_utils.dart';
 
 initMenubars() {
-  if (Platform.isMacOS || Platform.isWindows || Platform.isLinux) {
+  if (isDesktop) {
     setApplicationMenu([
       Submenu(label: "file", children: [
         MenuItem(label: "new project"),

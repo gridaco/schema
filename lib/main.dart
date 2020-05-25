@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:schema_studio/screens/studio.dart';
 import 'package:schema_studio/utils/menubar.dart';
+import 'package:schema_studio/utils/routing/routing.dart';
 import 'package:schema_studio/utils/window_size.dart';
 
 void main() {
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: StudioScreen(),
+      routes: buildRouter(context),
+      initialRoute: StudioScreen.routeName,
     );
   }
 }
