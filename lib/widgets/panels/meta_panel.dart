@@ -10,13 +10,22 @@ class _MetaPanelState extends State<MetaPanel> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[100],
+      color: Theme.of(context).colorScheme.surface,
       width: PANEL_DEFAULT_WIDTH,
       child: _buildBody(),
     );
   }
 
   Widget _buildBody() {
+    return SingleChildScrollView(
+      child: Container(
+          height: double.maxFinite,
+          padding: EdgeInsets.all(8),
+          child: tab1Content()),
+    );
+  }
+
+  Widget tab1Content() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [Text("meta fields panel")],

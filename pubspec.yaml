@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  file_picker: ^1.9.0+1
   file_chooser:
     git:
       url: git://github.com/google/flutter-desktop-embedding.git
