@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:schema_studio/widgets/cards/card_base.dart';
 import 'package:schema_studio/widgets/rows/schema_field_row.dart';
 
 import '../rows/schema_field_row.dart';
@@ -26,7 +27,7 @@ class _SchemaEditorCardState extends State<SchemaEditorCard> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("schema editor"),
+        CardHeader(title: "schema editor"),
         ListView.builder(
           itemBuilder: (c, i) {
             final data = fields[i];

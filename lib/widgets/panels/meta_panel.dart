@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:schema_studio/utils/themes.dart';
+import 'package:schema_studio/widgets/panels/panel_base.dart';
 
 class MetaPanel extends StatefulWidget {
   @override
@@ -9,9 +10,10 @@ class MetaPanel extends StatefulWidget {
 class _MetaPanelState extends State<MetaPanel> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Theme.of(context).colorScheme.surface,
-      width: PANEL_DEFAULT_WIDTH,
+    return SidePanelBase(
+      border: Border(
+          left: PANEL_DEFAULT_BORDER_SIDE
+      ),
       child: _buildBody(),
     );
   }

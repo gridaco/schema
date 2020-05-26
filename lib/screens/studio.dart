@@ -41,7 +41,7 @@ class _StudioScreenState extends State<StudioScreen> {
   }
 
   Widget content() {
-    return Flexible(
+    return Expanded(
         child: SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(

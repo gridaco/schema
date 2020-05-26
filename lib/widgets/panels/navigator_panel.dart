@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:schema_studio/utils/themes.dart';
 import 'package:schema_studio/utils/tree_view/tree_view.dart';
+import 'package:schema_studio/widgets/panels/panel_base.dart';
 
 class NavigatorPanel extends StatefulWidget {
   @override
@@ -10,9 +11,10 @@ class NavigatorPanel extends StatefulWidget {
 class _NavigatorPanelState extends State<NavigatorPanel> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Theme.of(context).colorScheme.surface,
-      width: PANEL_DEFAULT_WIDTH,
+    return SidePanelBase(
+      border: Border(
+        right: PANEL_DEFAULT_BORDER_SIDE
+      ),
       child: TreeView(
           children: [
         TreeViewChild(
