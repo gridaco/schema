@@ -16,18 +16,18 @@ class _NavigatorPanelState extends State<NavigatorPanel> {
       child: TreeView(
           children: [
         TreeViewChild(
-          parent: Text("1"),
+          parent: Text("folder 1"),
           children: [
-            Text("aaa"),
-            Text("aaa"),
+            Text("item 1"),
+            Text("item 2"),
           ],
           startExpanded: true,
         ),
-        Text("bbbb"),
-        Text("aaa"),
-        Text("cc"),
-        Text("d"),
-        Text("aaa"),
+        Text("item 3"),
+        Text("item 4"),
+        Text("item 5"),
+        Text("item 6"),
+        Text("item 7"),
       ]),
     );
   }

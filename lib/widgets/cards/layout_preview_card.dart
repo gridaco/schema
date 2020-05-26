@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:schema_studio/screens/stile_catalog_screen.dart';
 import 'package:schema_studio/widgets/dummy/movie_card.dart';
 
 class LayoutPreviewCard extends StatefulWidget {
@@ -21,7 +22,9 @@ class _LayoutPreviewCardState extends State<LayoutPreviewCard> {
       children: [
         IconButton(
           icon: Icon(Icons.select_all),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pushNamed(StileCatalogScreen.routeName);
+          },
         ),
         IconButton(
           icon: Icon(Icons.navigate_before),

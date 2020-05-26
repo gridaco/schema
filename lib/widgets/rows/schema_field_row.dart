@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class SchemaFieldRow extends StatefulWidget{
+class SchemaFieldRow extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => _SchemaFieldRowState();
 }
 
-class _SchemaFieldRowState extends State<SchemaFieldRow>{
+class _SchemaFieldRowState extends State<SchemaFieldRow> {
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -15,7 +15,7 @@ class _SchemaFieldRowState extends State<SchemaFieldRow>{
     );
   }
 
-  Widget buildBody(){
+  Widget buildBody() {
     return Row(
       children: [
         new Flexible(
@@ -26,25 +26,30 @@ class _SchemaFieldRowState extends State<SchemaFieldRow>{
         ),
         IconButton(
           icon: Icon(Icons.close),
-          onPressed: (){
-
-          },
+          onPressed: () {},
         )
       ],
     );
   }
-
 }
 
-class AddFieldToggleRow extends StatelessWidget{
+class AddFieldToggleRow extends StatelessWidget {
+  final Function onAdd;
+
+  const AddFieldToggleRow({this.onAdd});
+
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Icon(Icons.add),
-        OutlineButton(onPressed: (){}, child: Text("add"),)
+        OutlineButton(
+          onPressed: () {
+            this.onAdd?.call();
+          },
+          child: Text("add"),
+        )
       ],
     );
   }
-  
 }
