@@ -8,22 +8,31 @@ class SchemaFieldRow extends StatefulWidget {
 class _SchemaFieldRowState extends State<SchemaFieldRow> {
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Container(
-        child: buildBody(),
-      ),
+    return Container(
+      child: buildBody(),
     );
   }
 
   Widget buildBody() {
     return Row(
       children: [
-        new Flexible(
-          child: new TextField(
-            decoration: const InputDecoration(helperText: "Enter App ID"),
-            style: Theme.of(context).textTheme.body1,
+        Icon(Icons.drag_handle),
+        Expanded(
+          child: Container(
+            decoration: new BoxDecoration(
+                color: Theme.of(context).colorScheme.background,
+                borderRadius:
+                    new BorderRadius.all(const Radius.circular(40.0))),
+            child: TextField(
+              decoration: const InputDecoration(border: InputBorder.none),
+              style: Theme.of(context).textTheme.body1,
+            ),
           ),
         ),
+
+//        Flexible(
+//          child:
+//        ),
         IconButton(
           icon: Icon(Icons.close),
           onPressed: () {},
@@ -40,16 +49,12 @@ class AddFieldToggleRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Icon(Icons.add),
-        OutlineButton(
-          onPressed: () {
-            this.onAdd?.call();
-          },
-          child: Text("add"),
-        )
-      ],
+    return FlatButton.icon(
+      icon: Icon(Icons.add),
+      label: Text("add new field".toUpperCase()),
+      onPressed: () {
+        this.onAdd?.call();
+      },
     );
   }
 }
