@@ -4,6 +4,10 @@ Bridged schema studio built on flutter
 
 ![preview](/docs/macos-preview.png)
 
+## Design
+
+[figma](https://www.figma.com/file/Gaznaw1QHppxvs9UkqNOb0/website?node-id=80%3A0)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
