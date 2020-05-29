@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:schema_studio/screens/meta_types_screen.dart';
+import 'package:schema_studio/screens/stile_studio_template_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   @override
@@ -17,6 +18,8 @@ class MainDrawer extends StatelessWidget {
 
   List<LocalRouteItem> routes = [
     LocalRouteItem(name: "meta catalog", route: MetaTypesScreen.routeName),
+    LocalRouteItem(
+        name: "stile studio", route: StileStudioTemplateScreen.routeName),
   ];
 
   Widget devItems(BuildContext context) {

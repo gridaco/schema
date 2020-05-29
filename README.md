@@ -10,6 +10,16 @@ Bridged schema studio built on flutter
 
 ## Getting Started
 
+**setup flutter for desktop (mac)**
+https://flutter.dev/desktop
+
+```shell script
+ flutter channel master  # or dev
+ flutter upgrade
+ flutter config --enable-macos-desktop
+```
+
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
