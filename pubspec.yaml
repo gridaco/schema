@@ -37,19 +37,19 @@ dependencies:
     git:
       url: git://github.com/google/flutter-desktop-embedding.git
       path: plugins/file_chooser
-      ref: 2384bd8
+      ref: f1694f9
 
   menubar:
     git:
       url: git://github.com/google/flutter-desktop-embedding.git
       path: plugins/menubar
-      ref: 2384bd8
+      ref: f1694f9
 
   window_size:
     git:
       url: git://github.com/google/flutter-desktop-embedding.git
       path: plugins/window_size
-      ref: 2384bd8
+      ref: f1694f9
 
 dev_dependencies:
   flutter_test:
