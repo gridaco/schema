@@ -1,4 +1,6 @@
-# schema_studio
+![preview](/docs/logo.png)
+
+# schema studio
 
 Bridged schema studio built on flutter
 
