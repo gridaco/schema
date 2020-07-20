@@ -34,3 +34,9 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+
+## references
+- https://github.com/Norbert515/flutter_ide
+- https://github.com/psovit/rich_code_editor
+- https://github.com/jwill/flutter-blockly
+- https://github.com/rxlabz/panache
