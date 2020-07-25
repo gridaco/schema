@@ -40,3 +40,4 @@ samples, guidance on mobile development, and a full API reference.
 - https://github.com/psovit/rich_code_editor
 - https://github.com/jwill/flutter-blockly
 - https://github.com/rxlabz/panache
+- https://github.com/dart-lang/code_builder
