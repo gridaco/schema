@@ -1,2 +1,7 @@
 # schema
-schema engine &amp; mock data provider for bridged's products
+
+schema engine &amp; mock data provider
+
+## Related projects
+
+- [CoLI](https://github.com/gridaco/coli)
