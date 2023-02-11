@@ -1,0 +1,7 @@
+{
+  "name": "@grida/schema",
+  "version": "0.0.0",
+  "dependencies": {
+    "@sinclair/typebox": "^0.25.21"
+  }
+}
