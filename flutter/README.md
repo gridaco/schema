@@ -1,10 +1,10 @@
-![preview](/docs/logo.png)
+![preview](./docs/logo.png)
 
 # schema studio
 
 Bridged schema studio built on flutter
 
-![preview](/docs/macos-preview.png)
+![preview](./docs/macos-preview.png)
 
 ## Design
 
